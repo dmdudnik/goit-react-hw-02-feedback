@@ -1,0 +1,23 @@
+.feedbackopt {
+  display: block;
+  justify-content: center;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  background-color: whitesmoke;
+  border: 2px solid cornflowerblue;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
