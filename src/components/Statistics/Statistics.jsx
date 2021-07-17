@@ -5,7 +5,7 @@ import styles from '../Statistics/Statistics.module.css'
 
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
-    if (positivePercentage) {
+    if (total) {
         return (
         
             <div className={styles.statistics}>
@@ -14,28 +14,29 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
                 <p>Bad: {bad} </p>
                 <p>Total: {total} </p>
                 <p>Positive feedback: {positivePercentage}% </p>
-            </div>    
-        )
+            </div>
+        );
     }
 
     else {
         return (
             < Notification
                 message={'No feedback given'}
-            
-            />
-        )
-    } 
-}
+        />
+    );
+    
+    };
+    
+};
 
 Statistics.propTypes = {
-        good: PropTypes.number,
-        neutral: PropTypes.number,
-        bad: PropTypes.number,
-        total: PropTypes.number,
-        positivePercentage: PropTypes.number,
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
+    total: PropTypes.number,
+    positivePercentage: PropTypes.number,
 
-    }
+};
 
 export default Statistics;
 

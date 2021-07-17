@@ -6,9 +6,9 @@ const Section = ({ title, children }) => {
             <h2>{title}</h2>
             {children}
         </div>
-    )
+    );
     
     
-}
+};
 
 export default Section;
