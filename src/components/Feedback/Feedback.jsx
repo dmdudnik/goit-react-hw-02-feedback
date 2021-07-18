@@ -56,18 +56,17 @@ class Feedback extends React.Component {
           badIncrement={this.badIncrement}
         />
         <Section title={'Statistics'} />
-          
         <Statistics
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-          total={this.countTotalFeedback()}
-          positivePercentage={this.countPositiveFeedbackPercentage()}
+        good={this.state.good}
+        neutral={this.state.neutral}
+        bad={this.state.bad}
+        total={this.countTotalFeedback()}
+        positivePercentage={this.countPositiveFeedbackPercentage()}
         />
       </div>
     );
-  };
-};
+  }
+}
 
 export default Feedback;
 
