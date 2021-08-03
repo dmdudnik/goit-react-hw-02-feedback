@@ -1,14 +1,17 @@
 import React from 'react';
 
+
+
 const Section = ({ title, children }) => {
     return (
-        <div>
+        <section>
             <h2>{title}</h2>
             {children}
-        </div>
+        </section>
     );
     
     
 };
 
 export default Section;
+
