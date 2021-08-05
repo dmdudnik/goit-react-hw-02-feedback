@@ -1,8 +1,8 @@
-import React from 'react';
+//import React from 'react';
 import { Component } from 'react';
 import Section from '../Section/Section';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Statistics from '../Statistics/Statistics';
+import Statistic from '../Statistic/Statistic';
 import styles from '../Feedback/Feedback.module.css';
 
 
@@ -48,7 +48,6 @@ class Feedback extends Component {
   render() {
     
     return (
-      <>
       <div className={styles.feedback}>
         <h1>Please leave feedback</h1>
           
@@ -57,17 +56,15 @@ class Feedback extends Component {
           neutralIncrement={this.neutralIncrement}
           badIncrement={this.badIncrement}
         />
-        <Section title= "Statistics">
-        <Statistics
+        <Section title= "Statistics" />
+        <Statistic
         good={this.state.good}
         neutral={this.state.neutral}
         bad={this.state.bad}
         total={this.countTotalFeedback()}
         positivePercentage={this.countPositiveFeedbackPercentage()}
           />
-        </Section>
         </div>
-        </>
     );
   }
 }

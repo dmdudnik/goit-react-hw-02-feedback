@@ -1,12 +1,7 @@
-import './App.css';
-import FeedBack from './components/Feedback/Feedback';
+import Feedback from './components/Feedback/Feedback';
 
-function App() {
-  return (
-    <div className="App">
-      <FeedBack />
-    </div>
-  );
-}
+const App = () => {
+  return <Feedback />;
+};
 
 export default App;

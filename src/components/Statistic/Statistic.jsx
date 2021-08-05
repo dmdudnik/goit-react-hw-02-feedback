@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Notification from '../Notification/Notification';
-import styles from '../Statistics/Statistics.module.css';
+import styles from '../Statistic/Statistic.module.css';
 
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
     if (total) {
         return (
-            <div className={styles.statistics}>
+            <div className={styles.statistic}>
                 <p>Good: {good}</p>
                 <p>Neutral: {neutral}</p>
                 <p>Bad: {bad} </p>
@@ -28,7 +28,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     
 };
 
-Statistics.propTypes = {
+Statistic.propTypes = {
     good: PropTypes.number,
     neutral: PropTypes.number,
     bad: PropTypes.number,
@@ -37,7 +37,7 @@ Statistics.propTypes = {
 
 };
 
-export default Statistics;
+export default Statistic;
 
 
 

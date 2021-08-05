@@ -1,13 +1,13 @@
-import React from 'react';
+//import React from 'react';
 
 
 
 const Section = ({ title, children }) => {
     return (
-        <section>
+        <div>
             <h2>{title}</h2>
             {children}
-        </section>
+        </div>
     );
     
     
